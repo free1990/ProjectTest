@@ -12,6 +12,9 @@
 SPEC_BEGIN(VVStackSpec)
 
 describe(@"VVStack", ^{
+    
+    registerMatchers(@"BG");
+    
     context(@"when created", ^{
         __block VVStack *stack = nil;
         beforeEach(^{
@@ -51,8 +54,6 @@ describe(@"VVStack", ^{
         });
         
     });
-    
-    
     
     
     context(@"when new created and pushed 4.6", ^{
