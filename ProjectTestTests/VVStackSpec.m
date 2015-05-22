@@ -73,7 +73,7 @@ describe(@"VVStack", ^{
         
         it(@"should contains 0 element after pop", ^{
             [stack pop];
-            [[stack should] beEmpty]; 
+            [[stack should] beEmpty];
         });
         
     });
