@@ -22,6 +22,7 @@ describe(@"PhotosViewController", ^{
             [[view shouldNot] beNil];
             
             UINavigationController *mockNavController = [UINavigationController mock];
+            //stub需要的时给方法指定返回
             [photosViewController stub:@selector(navigationController) andReturn:mockNavController];
 
             [[mockNavController should] receive:@selector(pushViewController:animated:)];
